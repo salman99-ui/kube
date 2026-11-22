@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx-label
+  labels:
+    team: finance
+spec:
+  containers:
+    - name: nginx-label
+      image: nginx
+      ports:
+        - containerPort: 80
