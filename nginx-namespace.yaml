@@ -4,7 +4,7 @@ metadata:
   name: nginx-tech
   namespace: tech
   labels:
-    version: 1
+    version: "v1"
 spec:
   containers:
     - name: app
