@@ -1,9 +1,9 @@
 apiVersion: v1
 kind: Service
 metadata:
-  name: example-service
+  name: web-api
   labels:
-    name: example-service
+    name: web-api
 spec:
   selector:
     app: web-api
