@@ -14,7 +14,7 @@ spec:
 apiVersion: apps/v1
 kind: ReplicaSet
 metadata:
-  name:rs-nginx
+  name: rs-nginx
 spec:
   replicas: 2
   selector:
