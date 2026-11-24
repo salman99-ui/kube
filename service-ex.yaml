@@ -7,7 +7,6 @@ spec:
   externalName: jsonplaceholder.typicode.com
   ports:
     - port: 80
-      targetPort: 443
   
 
 ---
