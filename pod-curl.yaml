@@ -8,5 +8,6 @@ spec:
   containers:
     - name: curl
       image: nginx
+      command: ["sh", "-c", "echo 'created at startup' > /data/hello.txt"]
       ports:
         - containerPort: 80
