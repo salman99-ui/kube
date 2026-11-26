@@ -3,16 +3,18 @@ kind: Pod
 metadata:
   name: app
 spec:
-  volumes:  
+  volumes:
     - name: data-volume
       emptyDir: {}
   containers:
     - name: app-nginx
       image: nginx
-      command: ["sh", "-c", "echo 'created at startup' > /data/hello.txt"]
+      command:
+        - sh
+        - -c
+        - "echo 'created at startup' > /data/hello.txt && exec nginx -g 'daemon off;'"
       ports:
         - containerPort: 80
       volumeMounts:
         - name: data-volume
           mountPath: /data
-      
