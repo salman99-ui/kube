@@ -14,7 +14,7 @@ spec:
       name: app-nginx
       labels:
         name: app-nginx
-        version: 2
+        version: v2
     spec:
       containers:
         - name: app-nginx
